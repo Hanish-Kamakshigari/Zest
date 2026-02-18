@@ -39,10 +39,10 @@ function showSidebar(content) {
 }
 
 async function getSummary(text) {
-  const apiKey = "YOUR_API_KEY";
+  const apiKey = "AIzaSyAsefR36Lz9QpC0zrNB9LZwLvV9ey6k8JE";
 
   const response = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${apiKey}`,
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`,
     {
       method: "POST",
       headers: {
