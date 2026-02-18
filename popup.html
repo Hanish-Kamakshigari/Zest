@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zest – AI Summarizer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="brand">
+        <span class="brand-icon">🍋</span>
+        <h1 class="brand-name">Zest</h1>
+      </div>
+      <p class="tagline">Get the juice, skip the pulp</p>
+    </header>
+
+    <!-- Action Button -->
+    <button id="summarize-btn" class="btn-primary">
+      <span class="btn-icon">✨</span>
+      Summarize This Page
+    </button>
+
+    <!-- Loading State -->
+    <div id="loading-state" class="loading-state hidden">
+      <div class="spinner"></div>
+      <p class="loading-text">Analyzing page content<span class="dots"></span></p>
+    </div>
+
+    <!-- Error State -->
+    <div id="error-state" class="error-state hidden">
+      <span class="error-icon">⚠️</span>
+      <p id="error-message" class="error-message"></p>
+      <button id="retry-btn" class="btn-secondary">Try Again</button>
+    </div>
+
+    <!-- Summary Result -->
+    <div id="summary-state" class="summary-state hidden">
+      <div class="summary-header">
+        <h2 class="summary-title">Summary</h2>
+        <button id="copy-btn" class="btn-icon-only" title="Copy to clipboard">📋</button>
+      </div>
+      <div id="summary-content" class="summary-content"></div>
+      <button id="resummarize-btn" class="btn-secondary">Summarize Again</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span>Powered by Gemini AI</span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

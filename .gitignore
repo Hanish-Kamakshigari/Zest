@@ -1,0 +1,25 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (if ever added)
+node_modules/
+package-lock.json
+
+# Secrets
+.env
+config.js
+
+# Build artifacts
+*.zip
+*.crx
+
+# Logs
+*.log
